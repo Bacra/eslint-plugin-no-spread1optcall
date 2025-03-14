@@ -1,5 +1,3 @@
-/* eslint-disable brace-style, prefer-arrow-callback */
-
 /**
  * 使用node14.17.3 运行
  *
