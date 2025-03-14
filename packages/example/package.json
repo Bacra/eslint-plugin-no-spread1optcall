@@ -1,0 +1,18 @@
+{
+  "name": "example",
+  "private": true,
+  "main": "example.js",
+  "scripts": {
+    "test:example": "npx node@14.17.3 example.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "eslint-plugin-no-optional-call-with-spread": "workspace:^"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bacra/eslint-plugin-no-optional-call-with-spread.git",
+    "directory": "packages/example"
+  }
+}

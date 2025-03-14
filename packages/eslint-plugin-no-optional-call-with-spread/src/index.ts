@@ -13,11 +13,11 @@ export = {
               && node.callee.object         // 必须是对象调用链
               && node.optional              // 必须是可选链调用
               && node.arguments.length > 1  // 需要多个参数
-              && node.arguments.slice(0, -1).some(arg => arg.type === 'SpreadElement')  // 排除最后一个参数，数组中，有一个是展开语法
+              && node.arguments.slice(0, -1).some((arg: TSESTree.CallExpressionArgument) => arg.type === 'SpreadElement')  // 排除最后一个参数，数组中，有一个是展开语法
             ) {
               context.report({
                 node: node.callee as any,
-                message: '禁止使用 obj.fun?.(...[], 1) 语法。如果方法一定存在，则直接使用 obj.fun(...[], 1)即可',
+                message: '禁止使用 obj.fun?.(...[], 1) 语法。如果方法一定存在，可直接使用 obj.fun(...[], 1)。详情见node16以下对ES2020的支持程度。',
               });
             }
           },

@@ -1,30 +1,23 @@
 {
-  "name": "eslint-rules-no-optional-call-with-spread",
-  "version": "1.0.0",
-  "description": "node14不支持optional call with spread，需要eslint规则来禁止使用",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "root",
+  "private": true,
+  "packageManager": "pnpm@9.1.1",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "prepack": "npm run clean --if-present && npm run build --if-present",
-    "build": "npx tsc",
-    "clean": "npx rimraf dist",
-    "watch": "npx tsc --watch",
-    "test": "node test/index.spec.js",
-    "test:example": "npx node@14.17.3 test/index.spec.js"
+    "lint": "eslint .",
+    "pub": "changeset",
+    "pub2": "changeset version && changeset tag && git push --follow-tags",
+    "build": "nx run-many --target=build",
+    "watch": "nx run-many --target=watch --parallel=999",
+    "bench": "nx run-many --target=bench --output-style=stream",
+    "clean": "npx rimraf packages/*/*/node_modules && rimraf node_modules",
+    "test": "nx run-many --target=test",
+    "test-cov": "nx run-many --target=test --skip-nx-cache -- --coverage"
   },
-  "keywords": [],
-  "author": "Bacra<bacra.woo@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.4.0",
-    "@typescript-eslint/utils": "^8.4.0",
-    "@types/eslint": "^8.56.10",
-    "eslint": "^8.57.0",
-    "rimraf": "^3.0.2",
-    "typescript": "^5.5.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Bacra/eslint-rules-no-optional-call-with-spread.git"
+    "@changesets/cli": "^2.27.1",
+    "nx": "19.0.3"
   }
 }

@@ -1,6 +1,7 @@
-eslint-rules-no-optional-call-with-spread
-=========================================
+# i18nt
 
-node14不支持optional call with spread，需要eslint规则来禁止使用
+[![Coveralls][coveralls-image]][coveralls-url]
 
-详情见：https://node.green/#ES2020
+
+[coveralls-image]: https://img.shields.io/coveralls/iGdea/i18nt.svg
+[coveralls-url]: https://coveralls.io/github/iGdea/i18nt

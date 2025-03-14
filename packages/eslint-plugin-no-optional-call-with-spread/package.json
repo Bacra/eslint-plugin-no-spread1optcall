@@ -1,0 +1,30 @@
+{
+  "name": "eslint-plugin-no-optional-call-with-spread",
+  "version": "1.0.0",
+  "description": "node14不支持optional call with spread，需要eslint规则来禁止使用",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepack": "npm run clean --if-present && npm run build --if-present",
+    "build": "npx tsc",
+    "clean": "npx rimraf dist",
+    "watch": "npx tsc --watch",
+    "test": "node test/index.spec.js"
+  },
+  "keywords": [],
+  "author": "Bacra<bacra.woo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.4.0",
+    "@typescript-eslint/utils": "^8.4.0",
+    "@types/eslint": "^8.56.10",
+    "eslint": "^8.57.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^5.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bacra/eslint-plugin-no-optional-call-with-spread.git",
+    "directory": "packages/eslint-plugin-no-optional-call-with-spread"
+  }
+}
