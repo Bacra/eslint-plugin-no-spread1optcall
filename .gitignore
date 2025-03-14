@@ -1,0 +1,9 @@
+.idea
+.vscode
+.svn
+.DS_Store
+.history
+.tsconfig.tsbuildinfo
+
+node_modules
+dist
