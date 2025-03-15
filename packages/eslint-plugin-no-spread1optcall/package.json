@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-spread1optcall",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node14不支持optional call with spread，需要eslint规则来禁止使用",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

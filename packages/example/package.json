@@ -1,6 +1,7 @@
 {
   "name": "example",
   "private": true,
+  "version": "1.0.0",
   "main": "example.js",
   "scripts": {
     "test:example": "npx node@14.17.3 example.js",
