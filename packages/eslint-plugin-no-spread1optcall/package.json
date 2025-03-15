@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-no-optional-call-with-spread",
-  "version": "1.0.0",
+  "name": "eslint-plugin-no-spread1optcall",
+  "version": "1.0.2",
   "description": "node14不支持optional call with spread，需要eslint规则来禁止使用",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bacra/eslint-plugin-no-optional-call-with-spread.git",
-    "directory": "packages/eslint-plugin-no-optional-call-with-spread"
+    "url": "https://github.com/Bacra/eslint-plugin-no-spread1optcall.git",
+    "directory": "packages/eslint-plugin-no-spread1optcall"
   }
 }

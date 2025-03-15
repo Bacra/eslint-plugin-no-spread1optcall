@@ -15,7 +15,7 @@ importers:
         specifier: 19.0.3
         version: 19.0.3
 
-  packages/eslint-plugin-no-optional-call-with-spread:
+  packages/eslint-plugin-no-spread1optcall:
     devDependencies:
       '@types/eslint':
         specifier: ^8.56.10
@@ -44,9 +44,9 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
-      eslint-plugin-no-optional-call-with-spread:
+      eslint-plugin-no-spread1optcall:
         specifier: workspace:^
-        version: link:../eslint-plugin-no-optional-call-with-spread
+        version: link:../eslint-plugin-no-spread1optcall
 
 packages:
 

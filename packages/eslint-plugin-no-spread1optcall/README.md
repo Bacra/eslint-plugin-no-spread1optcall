@@ -1,4 +1,4 @@
-eslint-rules-no-optional-call-with-spread
+eslint-rules-no-spread1optcall
 =========================================
 
 node14不支持optional call with spread，需要eslint规则来禁止使用
